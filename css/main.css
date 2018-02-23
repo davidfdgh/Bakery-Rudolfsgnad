@@ -1,0 +1,23 @@
+.navigation .navbar {
+	background-color: #67221F;
+}
+
+.navigation .navbar-brand {
+  height: 80px;
+}
+
+.navigation .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 24px;
+  color: #FBC68B;
+}
+.navigation .navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+.dropdown-menu {
+	font-family: Impact, Charcoal, sans-serif;
+}
