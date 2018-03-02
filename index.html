@@ -9,8 +9,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Handlee|Marck+Script|Nanum+Pen+Script|Permanent+Marker|Shadows+Into+Light+Two" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>-->
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<!---<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.min.js">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js">
@@ -19,7 +19,7 @@
     <script src="https://cdn.firebase.com/libs/angularfire/0.9.0/angularfire.min.js"></script>
 	
 </head>
-<body ng-app="myApp">
+<body ng-app="app">
 	<!--- START of NAVIGATION BAR --->
 	<div class="navigation">
 	  <nav class="navbar navbar-inverse navbar-static-top">
@@ -117,12 +117,12 @@
 	<!---- START of Main Container --->
 	<div class="container">
 		<div class="row">
-			<figure class="col-sm-8">
+			<figure class="col-sm-9">
 				<h2>Want to look out what we offer and order?</h2>
 				<p>Please search and pick a product</p>
 				<input type="text" name="search" class="form-control" placeholder="Search...">
 			</figure>
-			<figure class="col-sm-4">
+			<figure class="col-sm-3">
 				<h2>Free delivery for orders over 100$</h2>
 				<img src="media/logo/delivery.png" alt="Free delivery">
 			</figure>
@@ -131,25 +131,28 @@
 		
 	<div class="main" ng-controller="MainController">
 		<div class="container">
-			<h2>{{ promo }}</h2>
-			<p>{{ title }}</p>
-			<div class="row">
-				<div ng-repeat="product in products" class="col-sm-6 col-md-4">
+			<div class="row"> 			
+			<h1>{{promo}}</h1>
+			<p>{{title}}</p>
+				<div ng-repeat="x in products" class="col-sm-3 col-md-3">
 					<div class="thumbnail">
-					  <img ng-src="{{product.image}}" alt="{{product.name}}">
-					  <div class="caption">
-						<h3>{{product.name}}</h3>
-						<p>{{product.price}}</p>
+					  <img ng-src={{x.src}}>
+					  <div>
+						<h3>{{x.name}}</h3>
+						<p>{{x.price}}</p>
 						<p><a href="#" class="btn btn-primary" role="button">Buy!</a> <a href="#" class="btn btn-default" role="button">Like!</a></p>
 					  </div>
 					</div>
-				</div>
+				</div>						
 			</div>	
 		</div>
 	</div>
 	
-	<!-- <script src="js/appDirectives.js"></script> -->
-</body>
 	<script src="js/app.js"></script>
-	<script src="js/MainController.js"></script>	
+	
+	
+	<script src="js/MainController.js"></script>
+<!-- 	<script src="js/appDirectives.js"></script> -->
+</body>
+		
 </html>
