@@ -29,13 +29,15 @@ body {
 
 #myCarousel h3 {
 	font-family: 'Amatic SC', cursive;
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: bold;
+	
 }
 #myCarousel p {
 	font-family: 'Shadows Into Light Two', cursive;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: bold;
+	
 }
 
 
