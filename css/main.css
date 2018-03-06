@@ -40,6 +40,12 @@ body {
 	
 }
 
+.main h2 {
+	font-family: 'Shadows Into Light Two', cursive;
+	font-weight: bold;
+}
+
+
 
 input[type=text] {
     width: 200px;
