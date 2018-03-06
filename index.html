@@ -117,26 +117,26 @@
 	</div>
 	<!----  END of Carousel ---->
 	<!---- START of Main Container --->
-	<div class="container">
-		<div class="row">
+	<div class="main" ng-controller="MainController">
+		<div class="container">
 			<figure class="col-sm-9">
 				<h2>Wanna look what we offer? Take a look and let eyes enjoy...</h2>
-				<p>Please search and pick a product</p>
-				<input type="text" name="search" class="form-control" placeholder="Search...">
+				<p>Please search and pick a product, by name, by country orgin or by prices</p>
+				<input type="text" ng-model="search" name="search" class="form-control" placeholder="Search...">
 			</figure>
 			<figure class="col-sm-3">
 				<h2>Free delivery for orders over 100$</h2>
 				<img src="media/logo/delivery.png" alt="Free delivery">
 			</figure>
 		</div>
-	</div>
+	
 		
-	<div class="main" ng-controller="MainController">
+	
 		<div class="container">
-			<div class="row"> 			
+			<div class="row "> 			
 			<h1>{{promo}}</h1>
 			<p>{{title}}</p>
-				<div ng-repeat="x in products" class="col-sm-3 col-md-3">
+				<div ng-repeat="x in products | filter:search" class="col-sm-3 col-md-3">
 					<div class="thumbnail">
 					  <img ng-src={{x.src}}>
 					  <div>
