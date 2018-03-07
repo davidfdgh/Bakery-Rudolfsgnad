@@ -4,6 +4,7 @@ body {
 
 .navigation .navbar {
 	background-color: #67221F;
+	
 }
 
 .navigation .navbar-brand {
@@ -27,6 +28,10 @@ body {
 	font-family: 'Shadows Into Light Two', cursive;
 }
 
+#myCarousel {
+	margin-bottom: 50px;
+}
+
 #myCarousel h3 {
 	font-family: 'Amatic SC', cursive;
 	font-size: 60px;
@@ -44,26 +49,6 @@ body {
 	font-family: 'Shadows Into Light Two', cursive;
 	font-weight: bold;
 }
-
-
-
-input[type=text] {
-    width: 200px;
-	height: 50px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-	
-}
-
-/* When the input field gets focus, change its width to 100% */
-input[type=text]:focus {
-    width: 35%;
-}
-
- h1 {
-	font-family: 'Shadows Into Light Two', cursive;
-}
-
 .main h1 {
 	font-family: 'Shadows Into Light Two', cursive;
 }
@@ -72,5 +57,30 @@ input[type=text]:focus {
 	font-family: 'Shadows Into Light Two', cursive;
 }
 
+input[type=text] {
+    width: 200px;
+	height: 50px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;	
+	margin-bottom: 20px;
+}
+
+/* When the input field gets focus, change its width */
+input[type=text]:focus {
+    width: 35%;
+}
+
+
+ h1 {
+	font-family: 'Shadows Into Light Two', cursive;
+	font-weight: bold;
+}
+
+#products {
+	padding: 45px;
+	
+}
+
+/*** Footer styles css/footer.css ***/
 
 
