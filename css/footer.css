@@ -1,5 +1,5 @@
 .footer-distributed{
-	background-color: #292c2f;
+	background-color: #67221F;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -26,13 +26,22 @@
 /* The company logo */
 
 .footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	color:  #FBC68B;
+	font: normal 36px 'Shadows Into Light Two', cursive;
 	margin: 0;
 }
 
 .footer-distributed h3 span{
-	color:  #5383d3;
+	color:  black;
+}
+
+.footer-distributed .footer-left img{
+	width: 80px;
+}
+
+.footer-company-name {
+	font-family: 'Shadows Into Light Two', cursive;
+	font-weight: bold;
 }
 
 /* Footer links */
