@@ -44,6 +44,7 @@ app.controller('MainController',['$scope', function($scope){
 		src: 'media/images/danish7.png',
 		country: 'Danish'
 	},
+	
 	{
 		name: 'Apple Strudel',
 		price: '9.6$',
@@ -98,10 +99,85 @@ app.controller('MainController',['$scope', function($scope){
 		src: 'media/images/strawberryCustardTarts.png',
 		country: 'French'
 	},
-
-
-
-
+	{
+		name: 'Mocha Cupcake',
+		price: '5.6$',
+		src: 'media/images/mochacup.jpg',
+		country: 'Serbia'
+	},
+	{
+		name: 'Choco Cupcake',
+		price: '5$',
+		src: 'media/images/chococup.png',
+		country: 'Serbia'
+	},
+	{
+		name: 'Caramel Cupcake',
+		price: '6$',
+		src: 'media/images/caramelcup.png',
+		country: 'Serbia'
+	},
+	{
+		name: 'Greek Spinat pie',
+		price: '12$',
+		src: 'media/images/spinatpie.jpg',
+		country: 'Balkan'+'Greek' 
+	},
+	{
+		name: 'Balkan White bread',
+		price: '5$',
+		src: 'media/images/balkanwhite.png',
+		country: 'Balkan'+'Serbia'
+	},
+	{
+		name: 'Serbian Pogacha',
+		price: '6$',
+		src: 'media/images/balkanpogaca.png',
+		country: 'Serbia'+'Balkan'
+	},
+	{
+		name: 'Panonian Cipovka',
+		price: '6$',
+		src: 'media/images/cipovka.png',
+		country: 'Panonia'+'Hungarian'
+	},
+	{
+		name: 'Balkan Somun',
+		price: '4.5$',
+		src: 'media/images/somun.png',
+		country: 'Balkan'+'Serbia'+'Turkey'
+	},
+	{
+		name: 'Olive bread',
+		price: '7$',
+		src: 'media/images/olivebread.png',
+		country: 'Mediterranean'+'Greek'
+	},
+	{
+		name: 'Baguette',
+		price: '5$',
+		src: 'media/images/baguette.png',
+		country: 'French'+'Mediterranean'
+	},
+	{
+		name: 'Finnish Rye bread',
+		price: '8$',
+		src: 'media/images/finishbread.png',
+		country: 'Finland'+'Rye'
+	},	
+	{
+		name: 'Latvian bread',
+		price: '8.6$',
+		src: 'media/images/latvian.png',
+		country: 'Latvia'+'Rye'
+	},
+	{
+		name: 'Russian black bread',
+		price: '7.5$',
+		src: 'media/images/russianblack.png',
+		country: 'Russian'+'Rye'
+	}
+	
 	
 	];
 	/** Search box 
