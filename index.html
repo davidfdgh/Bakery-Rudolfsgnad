@@ -117,6 +117,21 @@
 	  </div>
 	</div>
 	<!----  END of Carousel ---->
+	<!---- News section ---->
+	<div id="news" ng-controller="NewsController">
+		<div class="container">	
+			<h1>News</h1>
+			<div class="row">
+			
+				<figure ng-repeat="x in articles" class="col-sm-3">
+					<h2>{{x.title}}</h2>
+					<p>{{x.date}}</p>
+					<p>{{x.text}}</p>
+				</figure>
+		</div>
+	</div>
+	<!---- END of News ---->
+	
 	<!---- START of Main Container --->
 	<div class="main" ng-controller="MainController">
 		<div class="container">
@@ -139,7 +154,7 @@
 				<div class="row">		
 				<h1>{{promo}}</h1>
 				<p>{{title}}</p>
-					<div ng-repeat="x in products | filter:search" class="col-sm-3 col-md-3">
+					<div ng-repeat="x in products | filter:search" class="col-xs-9 col-sm-4 col-md-3 ">
 						<div class="thumbnail">
 						  <img ng-src={{x.src}}>
 						  <div>
@@ -200,9 +215,9 @@
 			</div>
 	</footer>
 	<script src="js/app.js"></script>
-	
-	
 	<script src="js/MainController.js"></script>
+	<script src="js/NewsController.js"></script>
+		
 <!-- 	<script src="js/appDirectives.js"></script> -->
 </body>
 		
