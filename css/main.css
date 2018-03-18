@@ -2,6 +2,16 @@ body {
 	background-color: #e6dac1;
 }
 
+p {
+	font-family:  'Handlee', cursive;
+	font-size: 18px;
+}
+
+h1 {
+	font-family: 'Shadows Into Light Two', cursive;
+	font-weight: bold;
+}
+
 .navigation .navbar {
 	background-color: #67221F;
 	
@@ -45,13 +55,38 @@ body {
 	
 }
 
+#news {
+	padding-bottom: 50px;	
+	background-color: #FBC68B;	
+	border-top: 16px solid #67221F;
+	/**border-top: 16px solid #EEE2D5;**/
+	border-bottom: 16px solid #D6893A;
+}
+
+
+#news > .container > .row  > .col-sm-2{
+	background-color: white;
+	margin: 5px;
+	border-radius: 5px; 
+	
+}
+
+#news > .container > .row  > .col-sm-2 > h2{
+	font-family: 'Shadows Into Light Two', cursive;
+	
+}
+
+
+.main {
+	padding-top: 50px;
+	
+}
+
 .main h2 {
 	font-family: 'Shadows Into Light Two', cursive;
 	font-weight: bold;
 }
-.main h1 {
-	font-family: 'Shadows Into Light Two', cursive;
-}
+
 
 .main h3 {
 	font-family: 'Shadows Into Light Two', cursive;
@@ -63,24 +98,42 @@ input[type=text] {
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;	
 	margin-bottom: 20px;
+	border-radius: 16px;
+	font-family:  'Handlee', cursive;
 }
 
 /* When the input field gets focus, change its width */
 input[type=text]:focus {
-    width: 35%;
+    width: 45%;
 }
 
-
- h1 {
-	font-family: 'Shadows Into Light Two', cursive;
-	font-weight: bold;
+.main > .container > .col-sm-8 {
+	float: left;
+	margin: 5px;
+	padding-bottom: 50px;	
+	background-color: white;
+	border-radius: 12px;
+	border-top: 12px solid #EEE2D5;
+	border-bottom: 12px solid #D6893A;
 }
+
+.main > .container > .col-sm-3 {
+	float: right;
+	margin: 5px;
+	padding-bottom: 50px;	
+	background-color: white;
+	border-radius: 12px;
+	border-top: 12px solid #EEE2D5;
+	border-bottom: 12px solid #D6893A;
+	position: right-side;
+}
+
 
 #products {
 	padding: 45px;
 	
 }
 
-/*** Footer styles css/footer.css ***/
+/*** Footer styles in>  css/footer.css ***/
 
 
