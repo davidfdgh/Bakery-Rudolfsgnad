@@ -123,11 +123,12 @@
 			<h1>News</h1>
 			<div class="row">
 			
-				<figure ng-repeat="x in articles" class="col-sm-3">
+				<figure ng-repeat="x in articles"   class="col-sm-2">
 					<h2>{{x.title}}</h2>
 					<p>{{x.date}}</p>
 					<p>{{x.text}}</p>
 				</figure>
+			</div>	
 		</div>
 	</div>
 	<!---- END of News ---->
@@ -135,7 +136,7 @@
 	<!---- START of Main Container --->
 	<div class="main" ng-controller="MainController">
 		<div class="container">
-			<figure class="col-sm-9">
+			<figure class="col-sm-8">
 				<h2>Wanna look what we offer? Take a look and let eyes enjoy...</h2>
 				<p>Please search and pick a product, by name, by country orgin or by prices</p>
 				<input type="text" ng-model="search" name="search" class="form-control" placeholder="Search...">
@@ -143,7 +144,7 @@
 			</figure>
 			<figure class="col-sm-3">
 				<h2>Free delivery for orders over 100$</h2>
-				<img src="media/logo/delivery.png" alt="Free delivery">
+				<img src="media/logo/cart.png" alt="Free delivery">
 			</figure>
 		</div>
 	
