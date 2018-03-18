@@ -177,11 +177,9 @@ app.controller('MainController',['$scope', function($scope){
 		src: 'media/images/russianblack.png',
 		country: 'Russian'+'Rye'
 	}
-	
-	
+		
 	];
-	/** Search box 
-	$scope.search= function(val) {
-		// fetch data
-	};**/
+	
+	
+	
 }]);
