@@ -145,10 +145,9 @@
 			<figure class="col-sm-3">
 				<h2>Free delivery for orders over 100$</h2>
 				<!--<img src="media/logo/cart.png" alt="Free delivery">-->
-				<div class="cartList">Cart list:
+				<div class="cartList"><p>Cart list:</p>
 					<ul>
-						<li>{{x.name}}</li>
-						<li>{{x.price}}</li>
+						<li class="cartItem">{{x.name}} -- {{x.price}}</li>					
 					</ul>								
 				</div>
 			</figure>
@@ -167,7 +166,13 @@
 						  <div>
 							<h3>{{x.name}}</h3>
 							<p>{{x.price}}</p>
-							<p><a href="#" class="btn btn-primary" role="button">ADD TO CART</a> <a href="#" class="btn btn-default" role="button">LIKE</a></p>
+							<p>
+								<a href="#" class="btn btn-primary" role="button">ADD TO CART</a> 
+								<input type="button" class="btn btn-default" ng-click="plusOne($index)" value="LIKE" role="button"></a>
+							</p>
+							 
+							<p>{{x.likes}}</p> 
+								
 						  </div>
 						</div>
 					</div>						
