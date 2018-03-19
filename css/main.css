@@ -58,11 +58,15 @@ h1 {
 #news {
 	padding-bottom: 50px;	
 	background-color: #FBC68B;	
-	border-top: 16px solid #67221F;
+	/**border-top: 16px solid #67221F;**/
 	/**border-top: 16px solid #EEE2D5;**/
 	border-bottom: 16px solid #D6893A;
 }
 
+#news > .container > h1{
+	
+	border-bottom: 3px solid #67221F;
+}
 
 #news > .container > .row  > .col-sm-2{
 	background-color: white;
@@ -85,6 +89,7 @@ h1 {
 .main h2 {
 	font-family: 'Shadows Into Light Two', cursive;
 	font-weight: bold;
+	border-bottom: 3px solid #67221F;
 }
 
 
@@ -130,8 +135,11 @@ input[type=text]:focus {
 
 
 #products {
-	padding: 45px;
-	
+	padding: 45px;	
+}
+
+#products > .row > h1{
+	border-bottom: 3px solid #67221F;	
 }
 
 /*** Footer styles in>  css/footer.css ***/
