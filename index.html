@@ -147,8 +147,10 @@
 				<!--<img src="media/logo/cart.png" alt="Free delivery">-->
 				<div class="cartList"><p>Cart list:</p>
 					<ul>
-						<li class="cartItem" >{{x.cartName}} -- {{x.cartPrice}}</li>
-						<li class="totalCheck">TOTAL</li>			
+						<li class="animate-repeat" ng-repeat="item in cart | orderBy:'category'">{{x.name}} -- {{ x.qty + " x " + x.price + " = " + (getCost(item))}} $</li>
+						<button class="btn-danger btn-xs" ng-click="removeItem(item);">Remove Item</button>
+						<li class="totalCheck">TOTAL {{ getTotal() | currency }}</li>
+						<button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
 					</ul>								
 				</div>
 			</figure>
