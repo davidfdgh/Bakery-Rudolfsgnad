@@ -4,6 +4,7 @@ app.controller('MainController',['$scope', function($scope){
 	
 	$scope.products = [
 	{   id: 1,
+	    qty : 1, 
 		name: 'Danish Apple Pastry',
 		price: 10,
 		src: 'media/images/danish1.png',
@@ -12,6 +13,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 2,
+		qty : 1,
 		name: 'Cream Danish Pastry',
 		price: 11,
 		src: 'media/images/danish2.png',
@@ -20,6 +22,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 3,
+		qty : 1,
 		name: 'Danish Forest Fruits',
 		price: 7.8,
 		src: 'media/images/danish3.png',
@@ -28,6 +31,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 4,
+		qty : 1,
 		name: 'Danish Snails',
 		price: 5,
 		src: 'media/images/danish4.png',
@@ -36,6 +40,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 5,
+		qty : 1,
 		name: 'Danish Pastry Triangle',
 		price: 17,
 		src: 'media/images/danish5.png',
@@ -44,6 +49,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 6,
+		qty : 1,
 		name: 'Danish Pinwheel',
 		price: 7,
 		src: 'media/images/danish6.png',
@@ -52,6 +58,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 7,
+		qty : 1,
 		name: 'Danish Wienerstang',
 		price: 9,
 		src: 'media/images/danish7.png',
@@ -61,6 +68,7 @@ app.controller('MainController',['$scope', function($scope){
 	
 	{
 		id: 8,
+		qty : 1,
 		name: 'Apple Strudel',
 		price: 9.6,
 		src: 'media/images/applestrudel.png',
@@ -69,6 +77,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 9,
+		qty : 1,
 		name: 'Croissant Apricot',
 		price: 7.6,
 		src: 'media/images/croissantapricot.png',
@@ -77,6 +86,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 10,
+		qty : 1,
 		name: 'Croissant Butter',
 		price: 6,
 		src: 'media/images/croissantbutter.png',
@@ -85,6 +95,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 11,
+		qty : 1,
 		name: 'Croissant Chocolate',
 		price: 8,
 		src: 'media/images/croissantchoco.png',
@@ -93,6 +104,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 12,
+		qty : 1,
 		name: 'Croissant and Moka Coffee',
 		price: 7.6,
 		src: 'media/images/croissantcoffee.png',
@@ -101,6 +113,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 13,
+		qty : 1,
 		name: 'Croissant Vanilla',
 		price: 11,
 		src: 'media/images/croissantvanilla.png',
@@ -109,6 +122,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 14,
+		qty : 1,
 		name: 'Pain aux Raisins',
 		price: 7,
 		src: 'media/images/painauxraisins.png',
@@ -117,6 +131,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 15,
+		qty : 1,
 		name: 'Vanilla & Almond Tart',
 		price: 12,
 		src: 'media/images/vanillaalmondtart.png',
@@ -125,6 +140,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 16,
+		qty : 1,
 		name: 'Strawberry Custard Tart',
 		price: 10,
 		src: 'media/images/strawberryCustardTarts.png',
@@ -133,6 +149,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 17,
+		qty : 1,
 		name: 'Mocha Cupcake',
 		price: 5.6,
 		src: 'media/images/mochacup.jpg',
@@ -141,6 +158,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 18,
+		qty : 1,
 		name: 'Choco Cupcake',
 		price: 5,
 		src: 'media/images/chococup.png',
@@ -149,6 +167,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 19,
+		qty : 1,
 		name: 'Caramel Cupcake',
 		price: 6,
 		src: 'media/images/caramelcup.png',
@@ -157,6 +176,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 20,
+		qty : 1,
 		name: 'Greek Spinat pie',
 		price: 12,
 		src: 'media/images/spinatpie.jpg',
@@ -165,6 +185,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 21,
+		qty : 1,
 		name: 'Balkan White bread',
 		price: 5,
 		src: 'media/images/balkanwhite.png',
@@ -173,6 +194,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 22,
+		qty : 1,
 		name: 'Serbian Pogacha',
 		price: 6,
 		src: 'media/images/balkanpogaca.png',
@@ -181,6 +203,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 23,
+		qty : 1,
 		name: 'Panonian Cipovka',
 		price: 6,
 		src: 'media/images/cipovka.png',
@@ -189,6 +212,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 24,
+		qty : 1,
 		name: 'Balkan Somun',
 		price: 4.5,
 		src: 'media/images/somun.png',
@@ -197,6 +221,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 25,
+		qty : 1,
 		name: 'Olive bread',
 		price: 7,
 		src: 'media/images/olivebread.png',
@@ -205,6 +230,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 26,
+		qty : 1,
 		name: 'Baguette',
 		price: 5,
 		src: 'media/images/baguette.png',
@@ -213,6 +239,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 27,
+		qty : 1,
 		name: 'Finnish Rye bread',
 		price: 8,
 		src: 'media/images/finishbread.png',
@@ -221,6 +248,7 @@ app.controller('MainController',['$scope', function($scope){
 	},	
 	{
 		id: 28,
+		qty : 1,
 		name: 'Latvian bread',
 		price: 8.6,
 		src: 'media/images/latvian.png',
@@ -229,6 +257,7 @@ app.controller('MainController',['$scope', function($scope){
 	},
 	{
 		id: 29,
+		qty : 1,
 		name: 'Russian black bread',
 		price: 7.5,
 		src: 'media/images/russianblack.png',
