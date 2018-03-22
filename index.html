@@ -147,7 +147,8 @@
 				<!--<img src="media/logo/cart.png" alt="Free delivery">-->
 				<div class="cartList"><p>Cart list:</p>
 					<ul>
-						<li class="cartItem">{{x.name}} -- {{x.price}}</li>					
+						<li class="cartItem" >{{x.cartName}} -- {{x.cartPrice}}</li>
+						<li class="totalCheck">TOTAL</li>			
 					</ul>								
 				</div>
 			</figure>
@@ -165,13 +166,13 @@
 						  <img ng-src={{x.src}}>
 						  <div>
 							<h3>{{x.name}}</h3>
-							<p>{{x.price}}</p>
+							<p>{{x.price}} $</p>
 							<p>
-								<a href="#" class="btn btn-primary" role="button">ADD TO CART</a> 
-								<input type="button" class="btn btn-default" ng-click="plusOne($index)" value="LIKE" role="button"></a>
+								<input type="button" class="btn btn-primary" ng-click="addCart($item)" value="ADD TO CART" role="button">
+								<input type="button" class="btn btn-default" ng-click="plusOne($index)" value="LIKE : {{x.likes}}" role="button">
 							</p>
 							 
-							<p>{{x.likes}}</p> 
+							<p></p> 
 								
 						  </div>
 						</div>
