@@ -28,8 +28,5 @@ app.controller('NewsController',['$scope', function($scope){
 	
 	
 	];
-	/** Search box 
-	$scope.search= function(val) {
-		// fetch data
-	};**/
+	
 }]);

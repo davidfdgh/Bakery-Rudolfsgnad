@@ -1,7 +1,9 @@
 app.controller('MainController',['$scope', function($scope){
 	$scope.promo = 'Our products';
 	$scope.title = 'Search results for...'; 
-	
+		
+	 
+	/** Products list **/
 	$scope.products = [
 	{   id: 1,
 	    qty : 1, 
@@ -265,16 +267,49 @@ app.controller('MainController',['$scope', function($scope){
 		country: 'Russian'+'Rye'
 	}
 		
-	]
-	
-	/** ADD to cart function **/
-	
-	
+	];
 	
 	/** like function **/
 	$scope.plusOne = function(index) { 
 	$scope.products[index].likes += 1; 	
 };	
+	
+	/** ADD to CART function **/
+	$scope.cartList = []
+	
+		
+	var findItemById = function(index, id) {
+		return _.find(index, function(index) {
+			return index.id === id;
+		});
+	};
+
+
+		
+	/*add item */
+	$scope.addItem = function (index) {
+		
+        $scope.cartList.push( 
+			{
+			id: $(this).id,
+			name: $(this).name,
+			price: $(this).price
+			
+		});
+	};
+      
+  
+	
+	$scope.getTotal = 0;
+	
+
+	/* remove item */
+    $scope.removeItem = function (x) {
+		var index =  $scope.cartList.indexOf(x);
+        $scope.cartList.splice(index, 1);
+    }
+	
+		
 	
 	
 }]);
