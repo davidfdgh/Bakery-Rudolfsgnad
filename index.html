@@ -11,7 +11,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<!---<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-resource.min.js">
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.min.js">
@@ -69,7 +68,7 @@
 	
 	<div class="container">
 	  <h2></h2>  
-	  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+	  <div id="myCarousel" class="carousel slide " data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -144,13 +143,18 @@
 			</figure>
 			<figure class="col-sm-3">
 				<h2>Free delivery for orders over 100$</h2>
-				<!--<img src="media/logo/cart.png" alt="Free delivery">-->
-				<div class="cartList"><p>Cart list:</p>
-					<ul>
-						<li class="animate-repeat" ng-repeat="item in cart | orderBy:'category'">{{x.name}} -- {{ x.qty + " x " + x.price + " = " + (getCost(item))}} $</li>
-						<button class="btn-danger btn-xs" ng-click="removeItem(item);">Remove Item</button>
-						<li class="totalCheck">TOTAL {{ getTotal() | currency }}</li>
-						<button class="btn-danger" ng-click="clearCart();">Clear Cart</button>
+				<!--<img src="media/logo/cart.png" alt="Free delivery">-->				
+				
+				<div><p>Cart list:</p>
+					<ul class="listCart"">
+						<li ng-repeat="item in cartList">
+							<p>{{item.name}}  Quantity: {{item.qty}} </span> Total: {{(getCost(item))}}<p>
+							<input class="btn btn-danger" type="button" ng-click="removeItem($index)" value="Remove" />
+						</li>
+						<li>
+							<p>Grand Total: {{getTotal()}} $<p>
+						</li>
+							
 					</ul>								
 				</div>
 			</figure>
@@ -160,26 +164,24 @@
 	
 		<div id="products" class="container">
 			
-				<div class="row">		
+			<div class="row">		
 				<h1>{{promo}}</h1>
 				<p>{{title}}</p>
-					<div ng-repeat="x in products | filter:search" class="col-xs-9 col-sm-4 col-md-3 ">
+					<div ng-repeat="item in products | filter:search" class="col-xs-9 col-sm-4 col-md-3 ">
 						<div class="thumbnail">
-						  <img ng-src={{x.src}}>
-						  <div>
-							<h3>{{x.name}}</h3>
-							<p>{{x.price}} $</p>
+						  <img ng-src={{item.src}}>
+						  <div id="addMe" ng-model="addMe">
+							<h3>{{item.name}}</h3>
+							<p>{{item.price}} $</p>
 							<p>
-								<input type="button" class="btn btn-primary" ng-click="addCart($item)" value="ADD TO CART" role="button">
-								<input type="button" class="btn btn-default" ng-click="plusOne($index)" value="LIKE : {{x.likes}}" role="button">
+								<input type="button" class="btn btn-primary" ng-click="addItem('index')" value="ADD TO CART" role="button">
+								<input type="button" class="btn btn-default" ng-click="plusOne('index')" value="LIKE : {{item.likes}}" role="button">
 							</p>
-							 
-							<p></p> 
-								
 						  </div>
+							
 						</div>
 					</div>						
-				</div>	
+			</div>	
 			
 		</div>
 		
@@ -204,16 +206,16 @@
 			</div>
 			<div class="footer-center">
 				<div>
-					<i class="fa fa-map-marker"></i>
+					<img src="media/logo/place.png">
 					<p><span>2 Sonje Marinkovic Street</span> Knicanin, Serbia</p>
 				</div>
 				<div>
-					<i class="fa fa-phone"></i>
+					<img src="media/logo/phone.png">
 					<p>+381 23 867 588 99</p>
 				</div>
 				<div>
-					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:info@rugolfsgnad.com">info@rugolfsgnad.com</a></p>
+					<img src="media/logo/mail.png">
+					<p><a href="mailto:info@rugolfsgnad.com">info@rudolfsgnad.com</a></p>
 				</div>
 			</div>
 			<div class="footer-right">
@@ -222,10 +224,10 @@
 					Rudolfsgnad Bakery is old-style patiserie originaly located in Knicanin, Serbia. Now, dispersed bakery chain around Europe.
 				</p>
 				<div class="footer-icons">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-linkedin"></i></a>
-					<a href="#"><i class="fa fa-github"></i></a>
+					<a href="#"><img src="media/logo/face.png"></a>
+					<a href="#"><img src="media/logo/twitter.png"></a>
+					<a href="#"><img src="media/logo/in.png"></a>
+					<a href="#"><img src="media/logo/git.png"></a>
 				</div>
 			</div>
 	</footer>
